@@ -14,6 +14,7 @@ RUN apk update && \
 
 WORKDIR $HOME
 VOLUME $HOME/.irssi
+COPY config .irssi/config
 
 USER $USER
 
